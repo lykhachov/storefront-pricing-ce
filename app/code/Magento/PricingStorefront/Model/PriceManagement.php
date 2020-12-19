@@ -201,7 +201,7 @@ class PriceManagement
             }
 
             if ($priceBookId === $parentId) {
-                throw new \RuntimeException(__('Price for product %1 not found.', $productId));
+                throw new \RuntimeException((string)__('Price for product %1 not found.', $productId));
             }
 
             $priceBookId = $parentId;
